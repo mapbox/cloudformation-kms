@@ -45,7 +45,7 @@ module.exports = {
   },
   Outputs: {
     Key: {
-      Value: cif('CreateKey', ref('Key'), ref('LegacyKeyArn')),
+      Value: cif('CreateKey', getAtt('Key', 'Arn'), ref('LegacyKeyArn')),
       Export: {
         Name: ref('AWS::StackName')
       }
@@ -55,4 +55,3 @@ module.exports = {
     CreateKey: equals(ref('LegacyKeyArn'), '')
   }
 };
-
