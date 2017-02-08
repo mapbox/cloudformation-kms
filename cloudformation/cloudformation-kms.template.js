@@ -2,6 +2,7 @@ var ref = require('cloudfriend').ref;
 var cif = require('cloudfriend').if;
 var join = require('cloudfriend').join;
 var equals = require('cloudfriend').equals;
+var getAtt = require('cloudfriend').getAtt;
 
 module.exports = {
   AWSTemplateFormatVersion: '2010-09-09',
