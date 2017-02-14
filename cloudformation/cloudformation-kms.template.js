@@ -2,6 +2,7 @@ var ref = require('cloudfriend').ref;
 var cif = require('cloudfriend').if;
 var join = require('cloudfriend').join;
 var equals = require('cloudfriend').equals;
+var getAtt = require('cloudfriend').getAtt;
 
 module.exports = {
   AWSTemplateFormatVersion: '2010-09-09',
@@ -45,7 +46,7 @@ module.exports = {
   },
   Outputs: {
     Key: {
-      Value: cif('CreateKey', ref('Key'), ref('LegacyKeyArn')),
+      Value: cif('CreateKey', getAtt('Key', 'Arn'), ref('LegacyKeyArn')),
       Export: {
         Name: ref('AWS::StackName')
       }
@@ -55,4 +56,3 @@ module.exports = {
     CreateKey: equals(ref('LegacyKeyArn'), '')
   }
 };
-
