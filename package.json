@@ -13,6 +13,6 @@
   },
   "homepage": "https://github.com/mapbox/cloudformation-kms",
   "dependencies": {
-    "cloudfriend": "^2.0.0"
+    "@mapbox/cloudfriend": "^2.0.1"
   }
 }
