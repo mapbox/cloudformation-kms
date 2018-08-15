@@ -1,7 +1,7 @@
 {
   "name": "cloudformation-kms",
-  "version": "1.0.0",
-  "description": "KMS key for encrypting CloudFormation parameters",
+  "version": "1.1.0",
+  "description": "create KMS key for encrypting CloudFormation parameters",
   "repository": {
     "type": "git",
     "url": "git://github.com/mapbox/cloudformation-kms.git"
@@ -12,10 +12,7 @@
     "url": "https://github.com/mapbox/cloudformation-kms/issues"
   },
   "homepage": "https://github.com/mapbox/cloudformation-kms",
-  "engines": {
-    "node": "4.4.2"
-  },
   "dependencies": {
-    "cloudfriend": "^1.5.0"
+    "@mapbox/cloudfriend": "^2.0.1"
   }
 }

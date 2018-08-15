@@ -1,8 +1,8 @@
-var ref = require('cloudfriend').ref;
-var cif = require('cloudfriend').if;
-var join = require('cloudfriend').join;
-var equals = require('cloudfriend').equals;
-var getAtt = require('cloudfriend').getAtt;
+var ref = require('@mapbox/cloudfriend').ref;
+var cif = require('@mapbox/cloudfriend').if;
+var join = require('@mapbox/cloudfriend').join;
+var equals = require('@mapbox/cloudfriend').equals;
+var getAtt = require('@mapbox/cloudfriend').getAtt;
 
 module.exports = {
   AWSTemplateFormatVersion: '2010-09-09',
