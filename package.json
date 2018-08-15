@@ -1,6 +1,6 @@
 {
   "name": "cloudformation-kms",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "create KMS key for encrypting CloudFormation parameters",
   "repository": {
     "type": "git",
